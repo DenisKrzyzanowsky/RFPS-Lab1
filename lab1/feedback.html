@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв’язок - Корпорація «УкрТехХолдинг»</title>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Логотип корпорації УкрТехХолдинг" width="220" height="60">
+        <h1>Корпорація «УкрТехХолдинг»</h1>
+        
+        <nav>
+            <a href="index.html"><button type="button">Головна сторінка</button></a>
+            <a href="directions.html"><button type="button">Напрями діяльності</button></a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Форма зворотнього зв’язку</h2>
+        <p>Будь ласка, заповніть форму нижче для зв'язку з представниками нашої корпорації.</p>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend><b>Персональна інформація</b></legend>
+                
+                <p>
+                    <label for="fullname">1. Прізвище та ім’я:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Наприклад: Коваленко Петро" size="40" required>
+                </p>
+
+                <p>
+                    <label for="email">2. E-mail адреса:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" size="40" required>
+                </p>
+
+                <p>
+                    <label for="age">3. Вік (повних років):</label><br>
+                    <input type="number" id="age" name="age" min="16" max="100" placeholder="25" required>
+                </p>
+
+                <p>
+                    <b>4. Освіта:</b><br>
+                    <input type="radio" id="edu_full" name="education" value="повна">
+                    <label for="edu_full">повна</label><br>
+                    
+                    <input type="radio" id="edu_incomplete" name="education" value="неповна">
+                    <label for="edu_incomplete">неповна</label><br>
+                    
+                    <input type="radio" id="edu_higher" name="education" value="вища" checked>
+                    <label for="edu_higher">вища</label><br>
+                    
+                    <input type="radio" id="edu_prof" name="education" value="професійна">
+                    <label for="edu_prof">професійна</label>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <p>
+                <label for="purpose"><b>5. Мета зворотнього зв’язку:</b></label><br>
+                <select id="purpose" name="purpose">
+                    <option value="collaboration">співпраця</option>
+                    <option value="copyright">скарга на порушення права власності</option>
+                    <option value="proposal">пропозиція</option>
+                    <option value="error">наявність помилки</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details"><b>6. Детально (обмеження: до 250 символів):</b></label><br>
+                <textarea id="details" name="details" rows="6" cols="45" maxlength="250" placeholder="Опишіть ваше питання або пропозицію тут..." required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">7. Згідно з Законом України "Про захист персональних даних", даю повну згоду на обробку моєї персональної інформації</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Надіслати запит">
+                <input type="reset" value="Очистити поля">
+            </p>
+
+        </form>
+
+        <p>
+            <a href="index.html"><button type="button">&larr; Повернутися на Головну сторінку</button></a>
+        </p>
+    </main>
+
+    <hr>
+    <footer>
+        <p>Служба підтримки корпорації: support@ukrtechholding.ua | +38 (044) 123-45-67</p>
+        <p>&copy; 2026 Корпорація «УкрТехХолдинг». Всі права захищено.</p>
+    </footer>
+
+</body>
+</html>
